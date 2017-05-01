@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1E82E61E68EB6100AF81F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */; };
+		DD1E83221E68FAE900AF81F1 /* geometic-bg-white-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */; };
 		DD7BB2A91E6899CF0045FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */; };
 		DD7BB2AB1E6899CF0045FD21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */; };
-		DD7BB2AE1E6899CF0045FD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2AC1E6899CF0045FD21 /* Main.storyboard */; };
 		DD7BB2B01E6899CF0045FD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2AF1E6899CF0045FD21 /* Assets.xcassets */; };
-		DD7BB2B31E6899CF0045FD21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2B11E6899CF0045FD21 /* LaunchScreen.storyboard */; };
 		DD7BB2BE1E6899CF0045FD21 /* Expodisen_oTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2BD1E6899CF0045FD21 /* Expodisen_oTests.swift */; };
 		DD7BB2C91E6899CF0045FD21 /* Expodisen_oUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2C81E6899CF0045FD21 /* Expodisen_oUITests.swift */; };
+		DD7BB2D71E689A720045FD21 /* iconos_expo in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2D61E689A720045FD21 /* iconos_expo */; };
+		DDB27B2B1E71F98E00EC3236 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */; };
+		F94013641EA0A79400D0F431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94013631EA0A79400D0F431 /* Main.storyboard */; };
+		F9A6B6B71EB6BCE30050C517 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */; };
+		F9F6EF1A1EA2D9D300CC0D5D /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6EF191EA2D9D300CC0D5D /* PrincipalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "geometic-bg-white-3.jpg"; sourceTree = "<group>"; };
 		DD7BB2A51E6899CF0045FD21 /* Expodiseño.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expodiseño.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD7BB2AD1E6899CF0045FD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD7BB2AF1E6899CF0045FD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD7BB2B21E6899CF0045FD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7BB2B41E6899CF0045FD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7BB2B91E6899CF0045FD21 /* ExpodiseñoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExpodiseñoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7BB2BD1E6899CF0045FD21 /* Expodisen_oTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expodisen_oTests.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		DD7BB2C41E6899CF0045FD21 /* ExpodiseñoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExpodiseñoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7BB2C81E6899CF0045FD21 /* Expodisen_oUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expodisen_oUITests.swift; sourceTree = "<group>"; };
 		DD7BB2CA1E6899CF0045FD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7BB2D61E689A720045FD21 /* iconos_expo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos_expo; sourceTree = "<group>"; };
+		DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		F94013631EA0A79400D0F431 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F9A6B6B41EB6BCE20050C517 /* Expodiseño-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Expodiseño-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9A6B6B51EB6BCE30050C517 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F9F6EF191EA2D9D300CC0D5D /* PrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrincipalViewController.swift; path = ../PrincipalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD1E83231E68FAF300AF81F1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		DD7BB29C1E6899CF0045FD21 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +117,19 @@
 		DD7BB2A71E6899CF0045FD21 /* Expodiseño */ = {
 			isa = PBXGroup;
 			children = (
+				F9A6B6B51EB6BCE30050C517 /* MBProgressHUD.h */,
+				F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */,
+				DD1E83231E68FAF300AF81F1 /* images */,
+				DD7BB2D61E689A720045FD21 /* iconos_expo */,
 				DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */,
+				F9F6EF191EA2D9D300CC0D5D /* PrincipalViewController.swift */,
 				DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */,
-				DD7BB2AC1E6899CF0045FD21 /* Main.storyboard */,
 				DD7BB2AF1E6899CF0045FD21 /* Assets.xcassets */,
-				DD7BB2B11E6899CF0045FD21 /* LaunchScreen.storyboard */,
 				DD7BB2B41E6899CF0045FD21 /* Info.plist */,
+				DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */,
+				DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */,
+				F94013631EA0A79400D0F431 /* Main.storyboard */,
+				F9A6B6B41EB6BCE20050C517 /* Expodiseño-Bridging-Header.h */,
 			);
 			path = "Expodiseño";
 			sourceTree = "<group>";
@@ -193,6 +220,8 @@
 				TargetAttributes = {
 					DD7BB2A41E6899CF0045FD21 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JU25EWQPKG;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					DD7BB2B81E6899CF0045FD21 = {
@@ -232,9 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7BB2B31E6899CF0045FD21 /* LaunchScreen.storyboard in Resources */,
+				DD1E82E61E68EB6100AF81F1 /* LaunchScreen.xib in Resources */,
+				F94013641EA0A79400D0F431 /* Main.storyboard in Resources */,
+				DD7BB2D71E689A720045FD21 /* iconos_expo in Resources */,
 				DD7BB2B01E6899CF0045FD21 /* Assets.xcassets in Resources */,
-				DD7BB2AE1E6899CF0045FD21 /* Main.storyboard in Resources */,
+				DD1E83221E68FAE900AF81F1 /* geometic-bg-white-3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7BB2AB1E6899CF0045FD21 /* ViewController.swift in Sources */,
+				F9F6EF1A1EA2D9D300CC0D5D /* PrincipalViewController.swift in Sources */,
+				F9A6B6B71EB6BCE30050C517 /* MBProgressHUD.m in Sources */,
+				DDB27B2B1E71F98E00EC3236 /* RegistroViewController.swift in Sources */,
 				DD7BB2A91E6899CF0045FD21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,25 +328,6 @@
 			targetProxy = DD7BB2C51E6899CF0045FD21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DD7BB2AC1E6899CF0045FD21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD7BB2AD1E6899CF0045FD21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DD7BB2B11E6899CF0045FD21 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD7BB2B21E6899CF0045FD21 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD7BB2CB1E6899CF0045FD21 /* Debug */ = {
@@ -410,10 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JU25EWQPKG;
 				INFOPLIST_FILE = "Expodiseño/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.expodiseno.Expodisen-o";
+				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.Expodiseno;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Expodiseño/Expodiseño-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,10 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JU25EWQPKG;
 				INFOPLIST_FILE = "Expodiseño/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.expodiseno.Expodisen-o";
+				PRODUCT_BUNDLE_IDENTIFIER = com.expodiseno.Expodiseno;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Expodiseño/Expodiseño-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +525,7 @@
 				DD7BB2CF1E6899CF0045FD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD7BB2D01E6899CF0045FD21 /* Build configuration list for PBXNativeTarget "ExpodiseñoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +534,7 @@
 				DD7BB2D21E6899CF0045FD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD7BB2D31E6899CF0045FD21 /* Build configuration list for PBXNativeTarget "ExpodiseñoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +543,7 @@
 				DD7BB2D51E6899CF0045FD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
