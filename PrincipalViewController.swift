@@ -33,7 +33,7 @@ class PrincipalViewController: UIViewController, UIImagePickerControllerDelegate
         {
         let userId = UserDefaults.standard.string(forKey: "userId")
         
-        let imageURL = NSURL(string:"http://localhost:8888/ExpoApp_Server/profile-pictures/\(userId!)/user-profile.jpg")
+        let imageURL = NSURL(string:"http://expodiseno.com/ExpoApp_Server/profile-pictures/\(userId!)/user-profile.jpg")
             
            // DispatchQueue.main.async (dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
             

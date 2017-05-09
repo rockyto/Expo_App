@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD1E82E61E68EB6100AF81F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */; };
 		DD1E83221E68FAE900AF81F1 /* geometic-bg-white-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */; };
-		DD7BB2A91E6899CF0045FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */; };
 		DD7BB2AB1E6899CF0045FD21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */; };
 		DD7BB2B01E6899CF0045FD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2AF1E6899CF0045FD21 /* Assets.xcassets */; };
 		DD7BB2BE1E6899CF0045FD21 /* Expodisen_oTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2BD1E6899CF0045FD21 /* Expodisen_oTests.swift */; };
@@ -17,6 +16,13 @@
 		DD7BB2D71E689A720045FD21 /* iconos_expo in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2D61E689A720045FD21 /* iconos_expo */; };
 		DDB27B2B1E71F98E00EC3236 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */; };
 		F94013641EA0A79400D0F431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94013631EA0A79400D0F431 /* Main.storyboard */; };
+		F9A23F421EB7B081002AEFD9 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F3A1EB7B080002AEFD9 /* MMDrawerBarButtonItem.m */; };
+		F9A23F431EB7B081002AEFD9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F3C1EB7B081002AEFD9 /* MMDrawerController.m */; };
+		F9A23F441EB7B081002AEFD9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F3F1EB7B081002AEFD9 /* MMDrawerVisualState.m */; };
+		F9A23F451EB7B081002AEFD9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F411EB7B081002AEFD9 /* UIViewController+MMDrawerController.m */; };
+		F9A23F491EB7B894002AEFD9 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F481EB7B894002AEFD9 /* LeftSideViewController.swift */; };
+		F9A23F4B1EB7BA7D002AEFD9 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A23F4A1EB7BA7D002AEFD9 /* RightSideViewController.swift */; };
+		F9A2566D1EB85E9D0064BE0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */; };
 		F9A6B6B71EB6BCE30050C517 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */; };
 		F9F6EF1A1EA2D9D300CC0D5D /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6EF191EA2D9D300CC0D5D /* PrincipalViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +61,17 @@
 		DD7BB2D61E689A720045FD21 /* iconos_expo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos_expo; sourceTree = "<group>"; };
 		DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		F94013631EA0A79400D0F431 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F9A23F391EB7B080002AEFD9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		F9A23F3A1EB7B080002AEFD9 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		F9A23F3B1EB7B080002AEFD9 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		F9A23F3C1EB7B081002AEFD9 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		F9A23F3D1EB7B081002AEFD9 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		F9A23F3E1EB7B081002AEFD9 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		F9A23F3F1EB7B081002AEFD9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		F9A23F401EB7B081002AEFD9 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		F9A23F411EB7B081002AEFD9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		F9A23F481EB7B894002AEFD9 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		F9A23F4A1EB7BA7D002AEFD9 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
 		F9A6B6B41EB6BCE20050C517 /* Expodiseño-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Expodiseño-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9A6B6B51EB6BCE30050C517 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -117,6 +134,7 @@
 		DD7BB2A71E6899CF0045FD21 /* Expodiseño */ = {
 			isa = PBXGroup;
 			children = (
+				F9A23F471EB7B14A002AEFD9 /* MMDrawer */,
 				F9A6B6B51EB6BCE30050C517 /* MBProgressHUD.h */,
 				F9A6B6B61EB6BCE30050C517 /* MBProgressHUD.m */,
 				DD1E83231E68FAF300AF81F1 /* images */,
@@ -130,6 +148,8 @@
 				DDB27B2A1E71F98E00EC3236 /* RegistroViewController.swift */,
 				F94013631EA0A79400D0F431 /* Main.storyboard */,
 				F9A6B6B41EB6BCE20050C517 /* Expodiseño-Bridging-Header.h */,
+				F9A23F481EB7B894002AEFD9 /* LeftSideViewController.swift */,
+				F9A23F4A1EB7BA7D002AEFD9 /* RightSideViewController.swift */,
 			);
 			path = "Expodiseño";
 			sourceTree = "<group>";
@@ -150,6 +170,22 @@
 				DD7BB2CA1E6899CF0045FD21 /* Info.plist */,
 			);
 			path = "ExpodiseñoUITests";
+			sourceTree = "<group>";
+		};
+		F9A23F471EB7B14A002AEFD9 /* MMDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				F9A23F391EB7B080002AEFD9 /* MMDrawerBarButtonItem.h */,
+				F9A23F3A1EB7B080002AEFD9 /* MMDrawerBarButtonItem.m */,
+				F9A23F3B1EB7B080002AEFD9 /* MMDrawerController.h */,
+				F9A23F3C1EB7B081002AEFD9 /* MMDrawerController.m */,
+				F9A23F3D1EB7B081002AEFD9 /* MMDrawerController+Subclass.h */,
+				F9A23F3E1EB7B081002AEFD9 /* MMDrawerVisualState.h */,
+				F9A23F3F1EB7B081002AEFD9 /* MMDrawerVisualState.m */,
+				F9A23F401EB7B081002AEFD9 /* UIViewController+MMDrawerController.h */,
+				F9A23F411EB7B081002AEFD9 /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A2566D1EB85E9D0064BE0A /* AppDelegate.swift in Sources */,
 				DD7BB2AB1E6899CF0045FD21 /* ViewController.swift in Sources */,
+				F9A23F421EB7B081002AEFD9 /* MMDrawerBarButtonItem.m in Sources */,
+				F9A23F431EB7B081002AEFD9 /* MMDrawerController.m in Sources */,
 				F9F6EF1A1EA2D9D300CC0D5D /* PrincipalViewController.swift in Sources */,
+				F9A23F441EB7B081002AEFD9 /* MMDrawerVisualState.m in Sources */,
 				F9A6B6B71EB6BCE30050C517 /* MBProgressHUD.m in Sources */,
+				F9A23F451EB7B081002AEFD9 /* UIViewController+MMDrawerController.m in Sources */,
 				DDB27B2B1E71F98E00EC3236 /* RegistroViewController.swift in Sources */,
-				DD7BB2A91E6899CF0045FD21 /* AppDelegate.swift in Sources */,
+				F9A23F491EB7B894002AEFD9 /* LeftSideViewController.swift in Sources */,
+				F9A23F4B1EB7BA7D002AEFD9 /* RightSideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
