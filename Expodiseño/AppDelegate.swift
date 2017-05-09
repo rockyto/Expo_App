@@ -135,6 +135,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController!.view.layer.mask=nil
     }
     
+    
+    
     func buildNavigationDrawer(){
         
         //Personaliza la vista
@@ -157,15 +159,72 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "PrincipalViewController") as! PrincipalViewController
         
-       
         
         
-        let mainPageNav = UINavigationController(rootViewController: navigationController)
+        let mainPageNav = UINavigationController(rootViewController: mainPage)
         let leftSideMenuNav = UINavigationController(rootViewController:leftSideMenu)
         let rightSideMenuNav = UINavigationController(rootViewController:rightSideMenu)
         
         self.window?.rootViewController = mainPageNav
         
+        let drawerContainer:MMDrawerController = MMDrawerController(center: mainPageNav, leftDrawerViewController: leftSideMenuNav, rightDrawerViewController: rightSideMenuNav)
+       
+        
+        
+        /*
+         let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "PrincipalViewController") as! PrincipalViewController
+         let mainPageNav = UINavigationController(rootViewController: navigationController)
+         self.window?.rootViewController = mainPageNav
+ 
+         */
+        
+        //logomask
+        navigationController.view.layer.mask = CALayer()
+        navigationController.view.layer.mask?.contents = UIImage(named: "logoGrande500pts")!.cgImage
+        navigationController.view.layer.mask?.bounds = CGRect(x:0, y:0, width: 60, height: 60)
+        navigationController.view.layer.mask?.anchorPoint = CGPoint (x: 0.5, y: 0.5)
+        navigationController.view.layer.mask?.position = CGPoint (x: navigationController.view.frame.width / 2, y: navigationController.view.frame.height / 2)
+        //logo mask background view
+        let maskBigView = UIView(frame: navigationController.view.frame)
+        maskBigView.backgroundColor = UIColor.white
+        navigationController.view.addSubview(maskBigView)
+        navigationController.view.bringSubview(toFront: maskBigView)
+        //logo mask animation
+        let transformAnimation = CAKeyframeAnimation (keyPath: "bounds")
+        transformAnimation.duration = 0.5
+        transformAnimation.beginTime = CACurrentMediaTime() + 1
+        let initalBounds = NSValue(cgRect: (navigationController.view.layer.mask?.bounds)!)
+        let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 50, height: 50))
+        let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 2000, height: 2000))
+        transformAnimation.values = [initalBounds, secondBounds, finalBounds]
+        transformAnimation.keyTimes = [0, 0.5, 1]
+        transformAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+        transformAnimation.isRemovedOnCompletion = false
+        transformAnimation.fillMode = kCAFillModeForwards
+        navigationController.view.layer.mask?.add(transformAnimation, forKey: "maskAnimation")
+        UIView.animate(withDuration: 0.1, delay: 1.35, options: UIViewAnimationOptions.curveEaseIn,
+                       animations: {
+                        maskBigView.alpha = 0.0
+        },
+                       completion: {finished in
+                        maskBigView.removeFromSuperview()
+        })
+        UIView.animate(withDuration: 0.25,
+                       delay: 1.3,
+                       options: UIViewAnimationOptions(),
+                       animations: {
+                        self.window!.rootViewController!.view.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+        },
+                       completion: {finished in
+                        UIView.animate(withDuration: 0.3,
+                                       delay: 0.0,
+                                       options : UIViewAnimationOptions.curveEaseInOut,
+                                       animations: {
+                                        self.window!.rootViewController!.view.transform = CGAffineTransform.identity
+                        },
+                                       completion: nil
+                        )
+        })
         
         
     }
