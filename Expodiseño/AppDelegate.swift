@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var drawerContainer:MMDrawerController?
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -35,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //Fin de recordar al usuario
             
         else{
-            
             
             
             //rootViewController from storyboard
@@ -167,9 +167,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = mainPageNav
         
-        let drawerContainer:MMDrawerController = MMDrawerController(center: mainPageNav, leftDrawerViewController: leftSideMenuNav, rightDrawerViewController: rightSideMenuNav)
-       
+        drawerContainer = MMDrawerController(center: mainPageNav, leftDrawerViewController: leftSideMenuNav, rightDrawerViewController: rightSideMenuNav)
         
+        drawerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.panningCenterView
+        drawerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView
+        
+        window?.rootViewController = drawerContainer
         
         /*
          let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "PrincipalViewController") as! PrincipalViewController

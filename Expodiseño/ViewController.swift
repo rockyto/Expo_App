@@ -136,13 +136,17 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(parseJSON?["userId"], forKey: "userId")
             UserDefaults.standard.synchronize()
             //take user
-                
+                /*
                 let Principal = self.storyboard?.instantiateViewController(withIdentifier: "PrincipalViewController") as! PrincipalViewController
                 
                 let mainPageNav = UINavigationController(rootViewController: Principal)
                 
                 let appDelegate = UIApplication.shared.delegate
                 appDelegate?.window??.rootViewController = mainPageNav
+                */
+                
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.buildNavigationDrawer()
                 
             }else{
                 let userMessage = parseJSON? ["message"] as? String
