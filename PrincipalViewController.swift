@@ -33,7 +33,7 @@ class PrincipalViewController: UIViewController, UIImagePickerControllerDelegate
         {
         let userId = UserDefaults.standard.string(forKey: "userId")
         
-        let imageURL = NSURL(string:"http://expodiseno.com/ExpoApp_Server/profile-pictures/\(userId!)/user-profile.jpg")
+        let imageURL = NSURL(string:"http://localhost:8888/ExpoApp_Server/profile-pictures/\(userId!)/user-profile.jpg")
             
            // DispatchQueue.main.async (dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
             
@@ -82,9 +82,10 @@ class PrincipalViewController: UIViewController, UIImagePickerControllerDelegate
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        let spinningActivity = MBProgressHUD.showAdded(to: self.view, animated: true)
-        spinningActivity.labelText = "Cargando"
-        spinningActivity.detailsLabelText = "Por favor espere"
+    let spinningActivity = MBProgressHUD.showAdded(to: self.view, animated: true)
+        
+    spinningActivity.label.text = "Cargando"
+    spinningActivity.detailsLabel.text = "Por favor espere"
         
     imagenDePerfil.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     
@@ -96,7 +97,7 @@ class PrincipalViewController: UIViewController, UIImagePickerControllerDelegate
     
     func myImageUploadRequest(){
     
-        let myURL = NSURL (string: "http://expodiseno.com/ExpoApp_Server/Scripts/imageUpload.php")
+        let myURL = NSURL (string: "http://localhost:8888/ExpoApp_Server/Scripts/imageUpload.php")
         let request = NSMutableURLRequest(url:myURL! as URL)
         request.httpMethod = "POST"
         let userId:String? = UserDefaults.standard.string(forKey: "userId")

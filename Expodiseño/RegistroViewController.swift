@@ -59,12 +59,13 @@ class RegistroViewController: UIViewController {
         }
         
        let spinningActivity = MBProgressHUD.showAdded(to: self.view, animated: true)
-       spinningActivity.labelText = "Cargando"
-       spinningActivity.detailsLabelText = "Por favor espere"
+        
+       spinningActivity.label.text = "Cargando"
+       spinningActivity.detailsLabel.text = "Por favor espere"
         
         
         
-        let myURL = NSURL(string: "http://expodiseno.com/ExpoApp_Server/Scripts/registerUser.php")
+        let myURL = NSURL(string: "http://localhost:8888/ExpoApp_Server/Scripts/registerUser.php")
         let request = NSMutableURLRequest(url:myURL! as URL)
         request.httpMethod = "POST"
         
@@ -77,7 +78,7 @@ class RegistroViewController: UIViewController {
             
             DispatchQueue.main.async {
                 
-                spinningActivity.hide(true)
+                spinningActivity.hide(animated: true)
                 
                 if error != nil {
                     self.displayAlertMessage(userMessage: (error?.localizedDescription)!)
