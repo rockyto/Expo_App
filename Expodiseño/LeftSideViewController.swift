@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LeftSideViewController: UIViewController {
+class LeftSideViewController: UIViewController, UITableViewDataSource {
+    
+    var menuItems:[String] = ["Main", "About", "Sign Out" ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +22,26 @@ class LeftSideViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    return menuItems.count
     }
-    */
+    
+    
+    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    
+    //var myCell = tableView.dequeueReusableCell(withIdentifier: "", forIndexPath: indexPath)
+    let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! UITableViewCell
+    
+    
+    myCell.textLabel?.text = menuItems[indexPath.row]
+        
+        
+    return myCell
+    
+    }
 
 }

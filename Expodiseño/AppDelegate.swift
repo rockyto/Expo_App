@@ -210,15 +210,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leftSideMenuNav = UINavigationController(rootViewController:leftSideMenu)
         let rightSideMenuNav = UINavigationController(rootViewController:rightSideMenu)
         
-        
         //  self.window!.rootViewController = navigationController
         drawerContainer = MMDrawerController(center: mainPageNav, leftDrawerViewController: leftSideMenuNav, rightDrawerViewController: rightSideMenuNav)
-        
         drawerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.panningCenterView
         drawerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView
         
         window?.rootViewController = drawerContainer
-        //self.window?.rootViewController = mainPageNav
         
     }
     

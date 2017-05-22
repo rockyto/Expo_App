@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD1E82E61E68EB6100AF81F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */; };
 		DD1E83221E68FAE900AF81F1 /* geometic-bg-white-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */; };
+		DD661D881ED3826400FCC542 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD661D871ED3826400FCC542 /* AboutViewController.swift */; };
 		DD7BB2AB1E6899CF0045FD21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */; };
 		DD7BB2B01E6899CF0045FD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7BB2AF1E6899CF0045FD21 /* Assets.xcassets */; };
 		DD7BB2BE1E6899CF0045FD21 /* Expodisen_oTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB2BD1E6899CF0045FD21 /* Expodisen_oTests.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		DD1E82E51E68EB6100AF81F1 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		DD1E83211E68FAE900AF81F1 /* geometic-bg-white-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "geometic-bg-white-3.jpg"; sourceTree = "<group>"; };
+		DD661D871ED3826400FCC542 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		DD7BB2A51E6899CF0045FD21 /* Expodiseño.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expodiseño.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7BB2A81E6899CF0045FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7BB2AA1E6899CF0045FD21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				F9A6B6B41EB6BCE20050C517 /* Expodiseño-Bridging-Header.h */,
 				F9A23F481EB7B894002AEFD9 /* LeftSideViewController.swift */,
 				F9A23F4A1EB7BA7D002AEFD9 /* RightSideViewController.swift */,
+				DD661D871ED3826400FCC542 /* AboutViewController.swift */,
 			);
 			path = "Expodiseño";
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				F9A23F431EB7B081002AEFD9 /* MMDrawerController.m in Sources */,
 				F9F6EF1A1EA2D9D300CC0D5D /* PrincipalViewController.swift in Sources */,
 				F9A23F441EB7B081002AEFD9 /* MMDrawerVisualState.m in Sources */,
+				DD661D881ED3826400FCC542 /* AboutViewController.swift in Sources */,
 				F9A6B6B71EB6BCE30050C517 /* MBProgressHUD.m in Sources */,
 				F9A23F451EB7B081002AEFD9 /* UIViewController+MMDrawerController.m in Sources */,
 				DDB27B2B1E71F98E00EC3236 /* RegistroViewController.swift in Sources */,

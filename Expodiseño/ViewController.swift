@@ -102,10 +102,14 @@ class ViewController: UIViewController {
         spinningActivity.detailsLabel.text = "Por favor espere"
         
         let myURL = NSURL(string: "http://localhost:8888/ExpoApp_Server/Scripts/userSignin.php")
+        
         let request = NSMutableURLRequest(url:myURL! as URL)
         request.httpMethod = "POST"
+        
         let postString = "userEmail=\(UserEmail!)&userPassword=\(UserPassword!)"
+       
         request.httpBody = postString.data(using: String.Encoding.utf8)
+        
         //URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
         URLSession.shared.dataTask(with: request as URLRequest, completionHandler:{ (data, response, error) in
         DispatchQueue.main.async{
@@ -135,6 +139,7 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(parseJSON?["userLastName"], forKey: "userLastName")
             UserDefaults.standard.set(parseJSON?["userId"], forKey: "userId")
             UserDefaults.standard.synchronize()
+                
             //take user
                 /*
                 let Principal = self.storyboard?.instantiateViewController(withIdentifier: "PrincipalViewController") as! PrincipalViewController
